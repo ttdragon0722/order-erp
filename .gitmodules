@@ -1,0 +1,6 @@
+[submodule "erp-frontend"]
+	path = erp-frontend
+	url = https://github.com/ttdragon0722/order-erp-frontend.git
+[submodule "erp-server"]
+	path = erp-server
+	url = https://github.com/ttdragon0722/order-erp-server.git
