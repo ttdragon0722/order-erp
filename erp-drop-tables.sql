@@ -1,0 +1,10 @@
+-- 刪除舊的表（如果存在）
+SET FOREIGN_KEY_CHECKS = 0;
+DROP TABLE IF EXISTS product_material;
+DROP TABLE IF EXISTS option_table;
+DROP TABLE IF EXISTS product;
+DROP TABLE IF EXISTS material;
+DROP TABLE IF EXISTS type;
+DROP TABLE IF EXISTS product_excluded_option;
+DROP TABLE IF EXISTS product_option;
+SET FOREIGN_KEY_CHECKS = 1;

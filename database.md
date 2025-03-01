@@ -4,13 +4,13 @@
 
 存放 **所有的原料資訊**。
 
-| 欄位        | 型別              | 說明       |
-| ----------- | ----------------- | ---------- |
-| id          | UUID              | 主鍵       |
-| name        | VARCHAR           | 原料名稱   |
-| enable      | BOOLEAN           | 是否上架   |
-| stock       | BOOLEAN           | 是否有庫存 |
-| stockAmount | NUMBER（預設 -1） | 庫存數量   |
+| 欄位        | 型別                | 說明       |
+| ----------- | ------------------- | ---------- |
+| id          | UUID                | 主鍵       |
+| name        | VARCHAR             | 原料名稱   |
+| enable      | BOOLEAN             | 是否上架   |
+| stock       | BOOLEAN             | 是否有庫存 |
+| stockAmount | NUMBER（可為 NULL） | 庫存數量   |
 
 ---
 
@@ -26,7 +26,7 @@
 
 ---
 
-### **3. 選項表（option）**
+### **3. 選項表（option_table）**
 
 存放 **所有的客製化選項**，無論來自 **類別** 還是 **產品自己新增的**。
 
@@ -35,7 +35,7 @@
 | id         | UUID                    | 主鍵                                    |
 | name       | VARCHAR                 | 選項名稱                                |
 | price      | NUMBER                  | 價格                                    |
-| m-id       | UUID（外鍵）            | 原料 ID                                 |
+| m_id       | UUID（外鍵，可為 NULL） | 原料 ID                                 |
 | type_id    | UUID（外鍵，可為 NULL） | 若此選項是類別的預設選項，則指向類別 ID |
 | product_id | UUID（外鍵，可為 NULL） | 若此選項是產品的自訂選項，則指向產品 ID |
 
@@ -64,8 +64,8 @@
 
 | 欄位 | 型別         | 說明    |
 | ---- | ------------ | ------- |
-| p-id | UUID（外鍵） | 產品 ID |
-| m-id | UUID（外鍵） | 原料 ID |
+| p_id | UUID（外鍵） | 產品 ID |
+| m_id | UUID（外鍵） | 原料 ID |
 
 ---
 
