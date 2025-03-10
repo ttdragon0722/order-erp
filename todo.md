@@ -2,12 +2,22 @@
 
 ---
 
+- [ ] material 表格
+
+
+
+
+
+
+
+
+
 ## **1️⃣ Next.js 開發**
-- [ ] **Middleware 管理 `manager` 路由導向**
+- ✅ **Middleware 管理 `manager` 路由導向**
   - 在 `middleware.ts` 檔案內處理登入檢查邏輯  
   - 未登入導向 `/manager/login`，已登入導向 `/manager/dashboard`  
 
-- [ ] **路由與入口管理**
+- ✅ **路由與入口管理**
   - 建立 `routeHandler.ts` 處理所有與路由、Middleware 溝通的邏輯  
   - 建議放置於 `lib/router/routeHandler.ts`  
 
@@ -38,7 +48,7 @@
     export default PageTransition;
     ```
 
-- [ ] **使用 `use server` 獲取後端資料**
+- ✅ **使用 `use server` 獲取後端資料**
   - `use server` 主要用於 **Server Actions**，但不適用 `GET` 請求  
   - 在 `server/actions.ts` 內建立 `fetchProducts`：
     ```tsx
@@ -57,7 +67,7 @@
 ---
 
 ## **2️⃣ ASP.NET 開發**
-- [ ] **撰寫 `LoginController` 登入 API**
+- ✅ **撰寫 `LoginController` 登入 API**
   - 目標：實作 ASP.NET Core `api/login`，並回傳 Token  
   - **範例**：
     ```csharp
@@ -80,7 +90,7 @@
     }
     ```
 
-- [ ] **MySQL 資料庫存取**
+- ✅ **MySQL 資料庫存取**
   - 建立 `DatabaseService.cs` 來管理資料存取  
   - **範例**：
     ```csharp
