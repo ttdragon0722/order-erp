@@ -19,7 +19,7 @@ def generate_insert_statements(excel_file: str, output_folder: str):
         name = row['Name']
         print(name)
         enable = '1' if row['Enable'] else '0'
-        stock = '1' if row['Stock'] else '0'
+        stock = '2' if row['Stock'] else '0'
         stock_amount = row['StockAmount'] if pd.notnull(row['StockAmount']) else 'NULL'
 
         # 生成 INSERT 語句

@@ -9,7 +9,7 @@
 | id          | UUID                | 主鍵       |
 | name        | VARCHAR             | 原料名稱   |
 | enable      | BOOLEAN             | 是否上架   |
-| stock       | BOOLEAN             | 是否有庫存 |
+| stock       | ENUM             | 是否有庫存 |
 | stockAmount | NUMBER（可為 NULL） | 庫存數量   |
 
 ---
